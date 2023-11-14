@@ -6,12 +6,12 @@
 #include <netdb.h>
 #include <unistd.h>
 
-#define URL_SIZE 100
+#define URL_SIZE 200
 #define IP_SIZE 256
 #define BUFFER_SIZE 102400
 #define PORT 80
 #define HYPER_LIKE_SIZE 200
-#define REQUEST_SIZE 300
+#define REQUEST_SIZE 400
 
 // convert domain name to ipv4
 char* conver_ip(char* url) {
@@ -53,7 +53,9 @@ int main() {
     scanf("%s", url); 
 
     // seperate url into ip and file path
-    strcpy(file_path, strstr(url, "/") + 1);
+    if (strstr(url, "/")) {
+        strcpy(file_path, strstr(url, "/") + 1);
+    }
     domain_name = strtok(url, "/"); 
 
     char* ip_host = conver_ip(domain_name);
@@ -74,6 +76,9 @@ int main() {
     strcat(message, domain_name);
     strcat(message, "\r\nConnection: close\r\n\r\n");
 
+    free(message);
+    free(url);
+    
     unsigned char* buffer = malloc((BUFFER_SIZE + 1) * sizeof(char));
 
     // setting socket
@@ -146,6 +151,7 @@ int main() {
 
     // close socket connection
     close(sockfd);
+    free(buffer);
     return 0;
 
 }
