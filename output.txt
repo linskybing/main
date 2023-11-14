@@ -1,0 +1,18 @@
+Please enter the URL:
+============ Socket ============ 
+Sending HTTP request
+Receiving the response
+============ Hyperlinks ============ 
+index.php
+members.php
+http://www.cs.nthu.edu.tw/~jungchuk/home.html
+LAB/
+gallery.php
+contact.php
+http://web.cs.nthu.edu.tw/files/14-1015-143485,r109-1.php?Lang=zh-tw
+http://www.nthu.edu.tw
+http://web.cs.nthu.edu.tw/bin/home.php
+http://www.com.nthu.edu.tw/
+http://www.highimpact-seo.co.uk/
+==================================== 
+We have found 11 hyperlinks

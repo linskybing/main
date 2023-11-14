@@ -18,7 +18,7 @@ char* conver_ip(char* url) {
 
     struct addrinfo hints;
     struct addrinfo *res, *tmp;
-    static char host[256];
+    static char host[IP_SIZE];
 
     memset(&hints, 0, sizeof(struct addrinfo));
     hints.ai_family = AF_INET;
@@ -55,8 +55,11 @@ int main() {
     // seperate url into ip and file path
     if (strstr(url, "/")) {
         strcpy(file_path, strstr(url, "/") + 1);
+        domain_name = strtok(url, "/");
     }
-    domain_name = strtok(url, "/"); 
+    else {
+        domain_name = url;
+    }  
 
     char* ip_host = conver_ip(domain_name);
 
@@ -75,9 +78,6 @@ int main() {
     strcat(message, " HTTP/1.1\r\nHost: ");
     strcat(message, domain_name);
     strcat(message, "\r\nConnection: close\r\n\r\n");
-
-    free(message);
-    free(url);
     
     unsigned char* buffer = malloc((BUFFER_SIZE + 1) * sizeof(char));
 
@@ -130,7 +130,7 @@ int main() {
             cur = end;
             printf("\n");        
         }
-        printf("%s", buffer);
+
         if ((start = strstr(cur, "<a"))) {
             for (offset = 0; *start != '>' && *start != '\0'; offset++ ,start++) {
                 buffer[offset] = *start;
@@ -151,7 +151,10 @@ int main() {
 
     // close socket connection
     close(sockfd);
-    free(buffer);
+    
+    /*free(message);
+    free(url);
+    free(buffer);*/
     return 0;
 
 }
