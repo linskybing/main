@@ -138,10 +138,6 @@ int main() {
         else {
             offset = 0;
         }
-
-        if (offset) {
-            printf("\n%d\n", offset);
-        }
         
     }
 
