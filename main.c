@@ -8,7 +8,7 @@
 
 #define URL_SIZE 100
 #define IP_SIZE 256
-#define BUFFER_SIZE 100
+#define BUFFER_SIZE 102400
 #define PORT 80
 #define HYPER_LIKE_SIZE 200
 #define REQUEST_SIZE 300
@@ -125,9 +125,9 @@ int main() {
             cur = end;
             printf("\n");        
         }
-
-        if (start = strstr(cur, "<a")) {
-            for (offset = 0; *start != '>' && *start != '\0' && offset < BUFFER_SIZE; offset++ ,start++) {
+        printf("%s", buffer);
+        if ((start = strstr(cur, "<a"))) {
+            for (offset = 0; *start != '>' && *start != '\0'; offset++ ,start++) {
                 buffer[offset] = *start;
             }
         }
