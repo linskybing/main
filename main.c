@@ -8,7 +8,7 @@
 
 #define URL_SIZE 100
 #define IP_SIZE 256
-#define BUFFER_SIZE 2
+#define BUFFER_SIZE 200
 #define PORT 80
 #define HYPER_LIKE_SIZE 200
 #define REQUEST_SIZE 300
@@ -108,25 +108,41 @@ int main() {
     printf("Receiving the response\n");
     printf("============ Hyperlinks ============ \n");
 
-    while((len = recv(sockfd, buffer, BUFFER_SIZE, 0)) > 0) {
+    while((len = recv(sockfd, buffer + offset, BUFFER_SIZE - offset, 0)) > 0) {
         unsigned char *start, *target, *end;        
         unsigned char *cur = buffer;
-        buffer[len] = '\0';
+        buffer[len + offset] = '\0';
         while ((start = strstr(cur, "<a")) &&
-                (target = strstr(start, "href=\"")) &&
-                (end = strstr(start, ">")) && (start - buffer) < len) {
-                    
+               (target = strstr(start, "href=\"")) &&
+               (end = strstr(target, ">"))) {
+
             target += 6;
 
-            for (; *target != '\"'; target++) {
+            /*for (; *target != '\"'; target++) {
                 printf("%c", (*target));
-            }
+            }*/
 
             count_hyper++;
             cur = end;
-            printf("\n");        
+            //printf("\n");        
         }
- 
+        printf("%s", buffer);
+        do {
+            start = cur;
+        }while(cur = strstr(cur, "<a"));
+
+        if (start) {
+            for (offset = 0; *start != '>' && *start != '\0'; offset++ ,start++) {
+                buffer[offset] = *start;
+            }
+        }
+        else if(buffer[len - 1] == '<') {
+            offset = 0;
+            buffer[offset++] = '<';            
+        }
+        else {
+            offset = 0;
+        }
 
     }
 
