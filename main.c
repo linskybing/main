@@ -69,7 +69,7 @@ int main() {
 
     //puts(message);
 
-    unsigned char* buffer = malloc(BUFFER_SIZE * sizeof(char));
+    unsigned char* buffer = malloc((BUFFER_SIZE+1) * sizeof(char));
     unsigned char* hyper = malloc(HYPER_LIKE_SIZE * sizeof(char));
 
     server_addr.sin_family = AF_INET;
@@ -103,21 +103,21 @@ int main() {
         unsigned char *start, *target, *end;        
         unsigned char *cur = buffer;
         buffer[len + offset] = '\0';
-        
+        int count = 0;
         while ((start = strstr(cur, "<a")) &&
                 (target = strstr(start, "href=\"")) &&
                 (end = strstr(start, ">")) && (start - buffer) < len) {
                     
-                target += 6;
+            target += 6;
 
-                for (; *target != '\"'; target++) {
-                    printf("%c", (*target));
-                }
+            for (; *target != '\"'; target++) {
+                printf("%c", (*target));
+            }
 
-                count_hyper++;
-                cur = end;
-                printf("\n");
-               
+            count_hyper++;
+            cur = end;
+            printf("\n");
+            //printf("\n====\n%.*s\n=====\n", (len - 1), buffer);
         }
 
         if ((start = strstr(cur, "<a"))) {
@@ -125,7 +125,6 @@ int main() {
             for(offset = 0; *start != ">" && *start != '\0'; offset++, start++) {
                 buffer[offset] = *start;
             }
-            offset++;
         }
         else if (buffer[len-1] == '<') {
             flag = 1;
