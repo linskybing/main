@@ -102,7 +102,9 @@ int main() {
     while((len = recv(sockfd, buffer + offset, BUFFER_SIZE - offset, 0)) > 0) {
         unsigned char *start, *target, *end;        
         unsigned char *cur = buffer;
+        printf("\noffset: %d\n", offset);
         buffer[len + offset] = '\0';
+        offset = 0;
         int count = 0;
         while ((start = strstr(cur, "<a")) &&
                 (target = strstr(start, "href=\"")) &&
@@ -117,16 +119,15 @@ int main() {
             count_hyper++;
             cur = end;
             printf("\n");
-            //printf("\n====\n%.*s\n=====\n", (len - 1), buffer);
         }
-
+        //printf("\n====\n%s\n=====\n", buffer);
         if ((start = strstr(cur, "<a"))) {
             flag = 1;
-            for(offset = 0; *start != ">" && *start != '\0'; offset++, start++) {
+            for(offset = 0; (*start - '>') != 0 && *start != '\0'; offset++, start++) {
                 buffer[offset] = *start;
             }
         }
-        else if (buffer[len-1] == '<') {
+        else if (buffer[len - 1] == '<') {
             flag = 1;
             buffer[0] = '<';
             offset++;
