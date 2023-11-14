@@ -8,7 +8,7 @@
 
 #define URL_SIZE 100
 #define IP_SIZE 256
-#define BUFFER_SIZE 10
+#define BUFFER_SIZE 30000
 #define PORT 80
 #define HYPER_LIKE_SIZE 200
 #define REQUEST_SIZE 300
@@ -41,7 +41,9 @@ char* conver_ip(char* url) {
 
 
 
-int main() {    
+int main() {   
+
+    // convert ip 
     char* url = malloc(URL_SIZE * sizeof(char));
     char* domain_name = malloc(HYPER_LIKE_SIZE * sizeof(char));
     char* file_path = malloc(HYPER_LIKE_SIZE * sizeof(char));
@@ -61,8 +63,10 @@ int main() {
     int sockfd;
     struct sockaddr_in server_addr;
     socklen_t addrlen = sizeof(server_addr);
-    // constitute message
+
+    // constitute request message
     char *message = malloc(REQUEST_SIZE * sizeof(char));
+
     strcat(message, "GET /");
     if (file_path)
         strcat(message, file_path);
@@ -70,26 +74,28 @@ int main() {
     strcat(message, domain_name);
     strcat(message, "\r\nConnection: close\r\n\r\n");
 
-    //puts(message);
-
     unsigned char* buffer = malloc((BUFFER_SIZE+1) * sizeof(char));
     unsigned char* hyper = malloc(HYPER_LIKE_SIZE * sizeof(char));
 
+    // setting socket
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = inet_addr(ip_host);
     server_addr.sin_port = htons(PORT);
 
+    // create socket object
     if ((sockfd = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
         perror("socket()");
         exit(EXIT_FAILURE);
     } 
 
+    // connect socket
     if (connect(sockfd, (struct sockaddr *)&server_addr, addrlen) == -1) {
         perror("connect()");
         fprintf(stderr, "Please start the server first\n");
         exit(EXIT_FAILURE);
     } 
 
+    // send request
     printf("Sending HTTP request\n");
     send(sockfd, message, strlen(message), 0);
 
@@ -97,16 +103,15 @@ int main() {
     // Consider using recv() in a loop for large data to ensure complete message reception
     int len = 0;
     int count_hyper = 0;
-
     int offset = 0;
+
     printf("Receiving the response\n");
     printf("============ Hyperlinks ============ \n");
-    while((len = recv(sockfd, buffer + offset, BUFFER_SIZE - offset, 0)) > 0) {
+
+    while((len = recv(sockfd, buffer, BUFFER_SIZE, 0)) > 0) {
         unsigned char *start, *target, *end;        
         unsigned char *cur = buffer;
-
         buffer[len] = '\0';
-
         while ((start = strstr(cur, "<a")) &&
                 (target = strstr(start, "href=\"")) &&
                 (end = strstr(start, ">")) && (start - buffer) < len) {
@@ -127,6 +132,8 @@ int main() {
 
     printf("==================================== \n");
     printf("We have found %d hyperlinks\n", count_hyper);
+
+    // close socket connection
     close(sockfd);
     return 0;
 

@@ -4,7 +4,7 @@ Sending HTTP request
 Receiving the response
 ============ Hyperlinks ============ 
 HTTP/1.1 200 OK
-Date: Tue, 14 Nov 2023 08:49:07 GMT
+Date: Tue, 14 Nov 2023 08:57:15 GMT
 Server: Apache/2.4.6 (FreeBSD) PHP/5.5.3
 Last-Modified: Thu, 18 Nov 2021 12:37:32 GMT
 ETag: "198d-5d10f6c1b5b00"
@@ -103,7 +103,48 @@ I am looking for <span style="font-family: Comic Sans MS; color: blue;">Ph.D stu
 	榮獲 2018年 第23屆行動計算研討會 優良論文獎 <br>
 </big>
 <img src="image/best_paper_award_MC2018.jpg"><br>
+<br><g Hua University</a></li>
+	<li>Joint Appointment Associate Professor, <a href="http://www.com.nthu.edu.tw">Institute of Communications Engineering</a>, <a href="http://www.nthu.edu.tw">National Tsing Hua University</a></li>
+</ul>
+
+
+<!--
+<hr style="width: 100%; height: 2px;">
 <br><br>
+<big class="emph" style="color: red;"><a href="course/Probability_2021Spring/index.html#adding">關於109學年下學期機率(10920EECS303001)</a></big><br>
+-->
+
+
+<!--
+<hr style="width: 100%; height: 2px;">
+<br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/IntroductionToComputerNetworks_2021Fall/index.html#adding">計算機網路概論 (11010EECS302002) 加簽</a> </a></big><br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/IntroductionToComputerNetworks_2021Fall/index.html#distancelearning">計算機網路概論 (11010EECS302002) 遠距同步教學</a> </a></big><br>
+<br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/BroadbandMobileCommunications_2021Fall/index.html#adding">寬頻行動通訊 加簽</a> </a></big><br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/BroadbandMobileCommunications_2021Fall/index.html#distancelearning">寬頻行動通訊 遠距同步教學</a> </a></big><br>
+<br><br>
+-->
+
+
+<!--
+<p style="color:black; font-size:18px; margin-left: 40px">
+	如果學校更新防疫指引，<font color="blue"><b>本門課的加簽方式隨時會更新！強烈建議週日與週一上午再看一次本網頁。</b></font><br>
+	<font color="red">第一堂課上課時才會處理加簽啦！</font><br>
+	<font color="blue">本週日(2021/9/12)會先開放「加簽『登記』系統」，一直到第一堂課的最前面15分鐘(左右)都還可以登記。</font><br>
+	先登記者可以放輕鬆慢慢填，或是第一堂課到教室跟大家一起用力填也ok。<br>
+	反正第一堂課會一起處理。<br>
+	
+	註一：重複登記只算一次，若登記人數超過名額，可能以亂數決定。<br>
+	註二：目前(2021/9/8)我還在等學校的實體上課／遠距教學指引，防疫措施就依照學校的指引囉。<br>
+</p>
+<br>
+-->
+
+<hr style="width: 100%; height: 2px;">
+<p>Jung-Chun Kao got his B.S., M.S., and Ph.D. degrees respectively from National Taiwan University (located in Taipei, Taiwan), University of Southern California (in Los Angeles, California, U.S.A.) and Carnegie Mellon University (in Pittsburgh, Pennsylvania, U.S.A.). He joined the Department of Computer Science at National Tsing Hua University, Hsinchu, Taiwan, where he is currently an associate professor.</p>
+
+<p>His research is focused on various networking topics from the perspectives of modeling, design, analysis and optimization. His <a href="research.html">research interests</a> include wireless ad-hoc and sensor networks, wireless vehicular networks, network queueing theory, cooperative communication, network coding, network information theory, network security, etc. In recognition of his <a href="publication.html">research accomplishments</a>, Dr. Kao was selected to receive the Wiley best paper award and the Franbr>
 
 
 <big class="emph" style="color: red;">
@@ -133,5 +174,60 @@ I am looking for <span style="font-family: Comic Sans MS; color: blue;">Ph.D stu
 <p><big style="font-family: Comic Sans MS; color: red;">Student Recruiting</big><br>
 I am looking for graduate students interested in <a href="research.html">my area of expertise</a>. My contact information is <a href="contact.html">here</a>.</p>
 -->
-==================================== 
+-->
+
+<p>Highly motivated students who are interested in <a href="research.html">networking-related areas</a> are welcome to join <a href="lab.html">my group</a>. My contact information is <a href="contact.html">here</a>.</p>
+
+
+
+<hr style="width: 100%; height: 2px;">
+<big class="emph">News</big><br>
+<big class="emph" style="color: red;">
+	<big>賀</big>
+	實驗室碩士生 <br>
+	榮獲 2018年 第23屆行動計算研討會 優良論文獎 <br>
+</big>
+<img src="image/best_paper_award_MC2018.jpg"><br>
+<br><g Hua University</a></li>
+	<li>Joint Appointment Associate Professor, <a href="http://www.com.nthu.edu.tw">Institute of Communications Engineering</a>, <a href="http://www.nthu.edu.tw">National Tsing Hua University</a></li>
+</ul>
+
+
+<!--
+<hr style="width: 100%; height: 2px;">
+<br><br>
+<big class="emph" style="color: red;"><a href="course/Probability_2021Spring/index.html#adding">關於109學年下學期機率(10920EECS303001)</a></big><br>
+-->
+
+
+<!--
+<hr style="width: 100%; height: 2px;">
+<br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/IntroductionToComputerNetworks_2021Fall/index.html#adding">計算機網路概論 (11010EECS302002) 加簽</a> </a></big><br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/IntroductionToComputerNetworks_2021Fall/index.html#distancelearning">計算機網路概論 (11010EECS302002) 遠距同步教學</a> </a></big><br>
+<br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/BroadbandMobileCommunications_2021Fall/index.html#adding">寬頻行動通訊 加簽</a> </a></big><br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/BroadbandMobileCommunications_2021Fall/index.html#distancelearning">寬頻行動通訊 遠距同步教學</a> </a></big><br>
+<br><br>
+-->
+
+
+<!--
+<p style="color:black; font-size:18px; margin-left: 40px">
+	如果學校更新防疫指引，<font color="blue"><b>本門課的加簽方式隨時會更新！強烈建議週日與週一上午再看一次本網頁。</b></font><br>
+	<font color="red">第一堂課上課時才會處理加簽啦！</font><br>
+	<font color="blue">本週日(2021/9/12)會先開放「加簽『登記』系統」，一直到第一堂課的最前面15分鐘(左右)都還可以登記。</font><br>
+	先登記者可以放輕鬆慢慢填，或是第一堂課到教室跟大家一起用力填也ok。<br>
+	反正第一堂課會一起處理。<br>
+	
+	註一：重複登記只算一次，若登記人數超過名額，可能以亂數決定。<br>
+	註二：目前(2021/9/8)我還在等學校的實體上課／遠距教學指引，防疫措施就依照學校的指引囉。<br>
+</p>
+<br>
+-->
+
+<hr style="width: 100%; height: 2px;">
+<p>Jung-Chun Kao got his B.S., M.S., and Ph.D. degrees respectively from National Taiwan University (located in Taipei, Taiwan), University of Southern California (in Los Angeles, California, U.S.A.) and Carnegie Mellon University (in Pittsburgh, Pennsylvania, U.S.A.). He joined the Department of Computer Science at National Tsing Hua University, Hsinchu, Taiwan, where he is currently an associate professor.</p>
+
+<p>His research is focused on various networking topics from the perspectives of modeling, design, analysis and optimization. His <a href="research.html">research interests</a> include wireless ad-hoc and sensor networks, wireless vehicular networks, network queueing theory, cooperative communication, network coding, network information theory, network security, etc. In recognition of his <a href="publication.html">research accomplishments</a>, Dr. Kao was selected to receive the Wiley best paper award and the Fran==================================== 
 We have found 35 hyperlinks
