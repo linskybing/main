@@ -1,5 +1,10 @@
+Please enter the URL:
+============ Socket ============ 
+Sending HTTP request
+Receiving the response
+============ Hyperlinks ============ 
 HTTP/1.1 200 OK
-Date: Tue, 14 Nov 2023 08:24:46 GMT
+Date: Tue, 14 Nov 2023 08:49:07 GMT
 Server: Apache/2.4.6 (FreeBSD) PHP/5.5.3
 Last-Modified: Thu, 18 Nov 2021 12:37:32 GMT
 ETag: "198d-5d10f6c1b5b00"
@@ -41,32 +46,32 @@ Content-Type: text/html
 <!--
 <hr style="width: 100%; height: 2px;">
 <br><br>
-<big class="emph" style="color: red;"><a href="course/Probability_2021Spring/index.html#adding">ï¿½ï¿½ï¿½ï¿½109ï¿½Ç¦~ï¿½Uï¿½Ç´ï¿½ï¿½ï¿½ï¿½v(10920EECS303001)</a></big><br>
+<big class="emph" style="color: red;"><a href="course/Probability_2021Spring/index.html#adding">Ãö©ó109¾Ç¦~¤U¾Ç´Á¾÷²v(10920EECS303001)</a></big><br>
 -->
 
 
 <!--
 <hr style="width: 100%; height: 2px;">
 <br>
-<big class="emph" style="color: blue;"><a name="add"> <a href="course/IntroductionToComputerNetworks_2021Fall/index.html#adding">ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (11010EECS302002) ï¿½[Ã±</a> </a></big><br>
-<big class="emph" style="color: blue;"><a name="add"> <a href="course/IntroductionToComputerNetworks_2021Fall/index.html#distancelearning">ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (11010EECS302002) ï¿½ï¿½ï¿½Zï¿½Pï¿½Bï¿½Ð¾ï¿½</a> </a></big><br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/IntroductionToComputerNetworks_2021Fall/index.html#adding">­pºâ¾÷ºô¸ô·§½× (11010EECS302002) ¥[Ã±</a> </a></big><br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/IntroductionToComputerNetworks_2021Fall/index.html#distancelearning">­pºâ¾÷ºô¸ô·§½× (11010EECS302002) »·¶Z¦P¨B±Ð¾Ç</a> </a></big><br>
 <br>
-<big class="emph" style="color: blue;"><a name="add"> <a href="course/BroadbandMobileCommunications_2021Fall/index.html#adding">ï¿½eï¿½Wï¿½ï¿½Ê³qï¿½T ï¿½[Ã±</a> </a></big><br>
-<big class="emph" style="color: blue;"><a name="add"> <a href="course/BroadbandMobileCommunications_2021Fall/index.html#distancelearning">ï¿½eï¿½Wï¿½ï¿½Ê³qï¿½T ï¿½ï¿½ï¿½Zï¿½Pï¿½Bï¿½Ð¾ï¿½</a> </a></big><br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/BroadbandMobileCommunications_2021Fall/index.html#adding">¼eÀW¦æ°Ê³q°T ¥[Ã±</a> </a></big><br>
+<big class="emph" style="color: blue;"><a name="add"> <a href="course/BroadbandMobileCommunications_2021Fall/index.html#distancelearning">¼eÀW¦æ°Ê³q°T »·¶Z¦P¨B±Ð¾Ç</a> </a></big><br>
 <br><br>
 -->
 
 
 <!--
 <p style="color:black; font-size:18px; margin-left: 40px">
-	ï¿½pï¿½Gï¿½Ç®Õ§ï¿½sï¿½ï¿½ï¿½Ì«ï¿½ï¿½Þ¡A<font color="blue"><b>ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½[Ã±ï¿½è¦¡ï¿½Hï¿½É·|ï¿½ï¿½sï¿½Iï¿½jï¿½Pï¿½ï¿½Ä³ï¿½gï¿½ï¿½Pï¿½gï¿½@ï¿½Wï¿½È¦Aï¿½Ý¤@ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½C</b></font><br>
-	<font color="red">ï¿½Ä¤@ï¿½ï¿½Ò¤Wï¿½Ò®É¤~ï¿½|ï¿½Bï¿½zï¿½[Ã±ï¿½Õ¡I</font><br>
-	<font color="blue">ï¿½ï¿½ï¿½gï¿½ï¿½(2021/9/12)ï¿½|ï¿½ï¿½ï¿½}ï¿½ï¿½uï¿½[Ã±ï¿½yï¿½nï¿½Oï¿½zï¿½tï¿½Î¡vï¿½Aï¿½@ï¿½ï¿½ï¿½ï¿½Ä¤@ï¿½ï¿½Òªï¿½ï¿½Ì«eï¿½ï¿½15ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½k)ï¿½ï¿½ï¿½Ù¥iï¿½Hï¿½nï¿½Oï¿½C</font><br>
-	ï¿½ï¿½ï¿½nï¿½Oï¿½Ì¥iï¿½Hï¿½ï¿½ï¿½Pï¿½Cï¿½Cï¿½ï¿½Aï¿½Î¬Oï¿½Ä¤@ï¿½ï¿½Ò¨ï¿½Ð«Ç¸ï¿½jï¿½aï¿½@ï¿½_ï¿½Î¤Oï¿½ï¿½]okï¿½C<br>
-	ï¿½Ï¥ï¿½ï¿½Ä¤@ï¿½ï¿½Ò·|ï¿½@ï¿½_ï¿½Bï¿½zï¿½C<br>
+	¦pªG¾Ç®Õ§ó·s¨¾¬Ì«ü¤Þ¡A<font color="blue"><b>¥»ªù½Òªº¥[Ã±¤è¦¡ÀH®É·|§ó·s¡I±j¯P«ØÄ³¶g¤é»P¶g¤@¤W¤È¦A¬Ý¤@¦¸¥»ºô­¶¡C</b></font><br>
+	<font color="red">²Ä¤@°ó½Ò¤W½Ò®É¤~·|³B²z¥[Ã±°Õ¡I</font><br>
+	<font color="blue">¥»¶g¤é(2021/9/12)·|¥ý¶}©ñ¡u¥[Ã±¡yµn°O¡z¨t²Î¡v¡A¤@ª½¨ì²Ä¤@°ó½Òªº³Ì«e­±15¤ÀÄÁ(¥ª¥k)³£ÁÙ¥i¥Hµn°O¡C</font><br>
+	¥ýµn°OªÌ¥i¥H©ñ»´ÃPºCºC¶ñ¡A©Î¬O²Ä¤@°ó½Ò¨ì±Ð«Ç¸ò¤j®a¤@°_¥Î¤O¶ñ¤]ok¡C<br>
+	¤Ï¥¿²Ä¤@°ó½Ò·|¤@°_³B²z¡C<br>
 	
-	ï¿½ï¿½ï¿½@ï¿½Gï¿½ï¿½ï¿½Æµnï¿½Oï¿½uï¿½ï¿½@ï¿½ï¿½ï¿½Aï¿½Yï¿½nï¿½Oï¿½Hï¿½Æ¶Wï¿½Lï¿½Wï¿½Bï¿½Aï¿½iï¿½ï¿½Hï¿½Ã¼Æ¨Mï¿½wï¿½C<br>
-	ï¿½ï¿½ï¿½Gï¿½Gï¿½Ø«e(2021/9/8)ï¿½ï¿½ï¿½Ù¦bï¿½ï¿½ï¿½Ç®Õªï¿½ï¿½ï¿½ï¿½ï¿½Wï¿½Ò¡ï¿½ï¿½ï¿½ï¿½Zï¿½Ð¾Ç«ï¿½ï¿½Þ¡Aï¿½ï¿½ï¿½Ì±ï¿½ï¿½Iï¿½Nï¿½Ì·Ó¾Ç®Õªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½oï¿½C<br>
+	µù¤@¡G­«½Æµn°O¥uºâ¤@¦¸¡A­Yµn°O¤H¼Æ¶W¹L¦WÃB¡A¥i¯à¥H¶Ã¼Æ¨M©w¡C<br>
+	µù¤G¡G¥Ø«e(2021/9/8)§ÚÁÙ¦bµ¥¾Ç®Õªº¹êÅé¤W½Ò¡þ»·¶Z±Ð¾Ç«ü¤Þ¡A¨¾¬Ì±¹¬I´N¨Ì·Ó¾Ç®Õªº«ü¤ÞÅo¡C<br>
 </p>
 <br>
 -->
@@ -93,19 +98,19 @@ I am looking for <span style="font-family: Comic Sans MS; color: blue;">Ph.D stu
 <hr style="width: 100%; height: 2px;">
 <big class="emph">News</big><br>
 <big class="emph" style="color: red;">
-	<big>ï¿½P</big>
-	ï¿½ï¿½ï¿½ï¿½ÇºÓ¤hï¿½ï¿½ <br>
-	ï¿½aï¿½ï¿½ 2018ï¿½~ ï¿½ï¿½23ï¿½ï¿½ï¿½ï¿½Ê­pï¿½ï¿½ï¿½Qï¿½| ï¿½uï¿½}ï¿½×¤ï¿½ï¿½ <br>
+	<big>¶P</big>
+	¹êÅç«ÇºÓ¤h¥Í <br>
+	ºaÀò 2018¦~ ²Ä23©¡¦æ°Ê­pºâ¬ã°Q·| Àu¨}½×¤å¼ú <br>
 </big>
 <img src="image/best_paper_award_MC2018.jpg"><br>
 <br><br>
 
 
 <big class="emph" style="color: red;">
-	<big>ï¿½P</big>
-	ï¿½Mï¿½Dï¿½Í¾Gï¿½tï¿½Û¡Bï¿½iï¿½Í¹ï¿½ï¿½Bï¿½]ï¿½Ó­ï¿½ <br>
-	ï¿½aï¿½ï¿½ <a href="http://csim.tca.org.tw/award.aspx">2012ï¿½ï¿½17ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½jï¿½Mï¿½|ï¿½Õ¸ï¿½Tï¿½ï¿½ï¿½ÎªAï¿½È³Ð·sï¿½vï¿½ï¿½</a> <br>
-	ï¿½ï¿½Tï¿½Þ³Nï¿½ï¿½ï¿½Î²Õªï¿½ï¿½Ä¤@ï¿½W <br>
+	<big>¶P</big>
+	±MÃD¥Í¾G¦t­Û¡B±iºÍ¹£¡B®]±Ó­Û <br>
+	ºaÀò <a href="http://csim.tca.org.tw/award.aspx">2012²Ä17©¡¥þ°ê¤j±M°|®Õ¸ê°TÀ³¥ÎªA°È³Ð·sÄvÁÉ</a> <br>
+	¸ê°T§Þ³NÀ³¥Î²Õªº²Ä¤@¦W <br>
 </big>
 <img src="image/photo/undergrad_2012-1.jpg"><br>
 
@@ -128,6 +133,5 @@ I am looking for <span style="font-family: Comic Sans MS; color: blue;">Ph.D stu
 <p><big style="font-family: Comic Sans MS; color: red;">Student Recruiting</big><br>
 I am looking for graduate students interested in <a href="research.html">my area of expertise</a>. My contact information is <a href="contact.html">here</a>.</p>
 -->
-=====
 ==================================== 
 We have found 35 hyperlinks
