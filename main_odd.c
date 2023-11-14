@@ -8,7 +8,7 @@
 
 #define URL_SIZE 100
 #define IP_SIZE 256
-#define BUFFER_SIZE 100
+#define BUFFER_SIZE 102400
 #define PORT 80
 #define HYPER_LIKE_SIZE 200
 #define REQUEST_SIZE 300
@@ -102,15 +102,14 @@ int main() {
     // Consider using recv() in a loop for large data to ensure complete message reception
     int len = 0;
     int count_hyper = 0;
-    int offset = 0;
 
     printf("Receiving the response\n");
     printf("============ Hyperlinks ============ \n");
 
-    while((len = recv(sockfd, buffer + offset, BUFFER_SIZE - offset, 0)) > 0) {
+    while((len = recv(sockfd, buffer, BUFFER_SIZE, 0)) > 0) {
         unsigned char *start, *target, *end;        
         unsigned char *cur = buffer;
-        buffer[len + offset] = '\0';
+        buffer[len] = '\0';
         while ((start = strstr(cur, "<a")) &&
                (target = strstr(start, "href=\"")) &&
                (end = strstr(target, ">"))) {
@@ -120,27 +119,10 @@ int main() {
             for (; *target != '\"'; target++) {
                 printf("%c", (*target));
             }
-    
+                
             count_hyper++;
             cur = end;
             printf("\n");        
-        }
-
-        if (start = strstr(cur, "<a")) {
-            for (offset = 0; *start != '>' && *start != '\0' && offset < BUFFER_SIZE; offset++ ,start++) {
-                buffer[offset] = *start;
-            }
-        }
-        else if(buffer[len - 1] == '<') {
-            offset = 0;
-            buffer[offset++] = '<';            
-        }
-        else {
-            offset = 0;
-        }
-
-        if (offset) {
-            printf("\n%d\n", offset);
         }
         
     }
