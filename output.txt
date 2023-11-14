@@ -4,7 +4,7 @@ Sending HTTP request
 Receiving the response
 ============ Hyperlinks ============ 
 HTTP/1.1 200 OK
-Date: Tue, 14 Nov 2023 08:56:24 GMT
+Date: Tue, 14 Nov 2023 09:13:52 GMT
 Server: Apache/2.4.6 (FreeBSD) PHP/5.5.3
 Last-Modified: Thu, 18 Nov 2021 12:37:32 GMT
 ETag: "198d-5d10f6c1b5b00"
@@ -133,6 +133,5 @@ I am looking for <span style="font-family: Comic Sans MS; color: blue;">Ph.D stu
 <p><big style="font-family: Comic Sans MS; color: red;">Student Recruiting</big><br>
 I am looking for graduate students interested in <a href="research.html">my area of expertise</a>. My contact information is <a href="contact.html">here</a>.</p>
 -->
-/p>
--->==================================== 
+==================================== 
 We have found 0 hyperlinks
