@@ -75,7 +75,6 @@ int main() {
     strcat(message, "\r\nConnection: close\r\n\r\n");
 
     unsigned char* buffer = malloc((BUFFER_SIZE + 1) * sizeof(char));
-    unsigned char* hyper = malloc(HYPER_LIKE_SIZE * sizeof(char));
 
     // setting socket
     server_addr.sin_family = AF_INET;
@@ -120,19 +119,15 @@ int main() {
 
             /*for (; *target != '\"'; target++) {
                 printf("%c", (*target));
-            }*/
-
+            }
+                */
             count_hyper++;
             cur = end;
             //printf("\n");        
         }
         printf("%s", buffer);
-        do {
-            start = cur;
-        }while(cur = strstr(cur, "<a"));
-
-        if (start) {
-            for (offset = 0; *start != '>' && *start != '\0'; offset++ ,start++) {
+        /*if (start = strstr(cur, "<a")) {
+            for (offset = 0; *start != '>' && *start != '\0' && offset < BUFFER_SIZE; offset++ ,start++) {
                 buffer[offset] = *start;
             }
         }
@@ -142,8 +137,8 @@ int main() {
         }
         else {
             offset = 0;
-        }
-
+        }*/
+        
     }
 
     printf("==================================== \n");
