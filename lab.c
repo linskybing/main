@@ -8,17 +8,17 @@
 
 #define URL_SIZE 100
 #define IP_SIZE 256
-#define BUFFER_SIZE 102400
+#define BUFFER_SIZE 100
 #define PORT 80
 #define HYPER_LIKE_SIZE 200
 #define REQUEST_SIZE 300
 
 // convert domain name to ipv4
-char* conver_ip(char* url) {
+char* conver_ip( char* url ) {
 
     struct addrinfo hints;
     struct addrinfo *res, *tmp;
-    static char host[256];
+    static char host[IP_SIZE];
 
     memset(&hints, 0, sizeof(struct addrinfo));
     hints.ai_family = AF_INET;
@@ -38,8 +38,6 @@ char* conver_ip(char* url) {
  
     return host;
 }
-
-
 
 int main() {   
 
@@ -106,7 +104,7 @@ int main() {
 
     printf("Receiving the response\n");
     printf("============ Hyperlinks ============ \n");
-
+    /*
     while((len = recv(sockfd, buffer + offset, BUFFER_SIZE - offset, 0)) > 0) {
         unsigned char *start, *target, *end;        
         unsigned char *cur = buffer;
@@ -125,7 +123,6 @@ int main() {
             cur = end;
             printf("\n");        
         }
-        printf("%s", buffer);
         if ((start = strstr(cur, "<a"))) {
             for (offset = 0; *start != '>' && *start != '\0'; offset++ ,start++) {
                 buffer[offset] = *start;
@@ -140,6 +137,7 @@ int main() {
         }
         
     }
+    */
 
     printf("==================================== \n");
     printf("We have found %d hyperlinks\n", count_hyper);
