@@ -6,12 +6,12 @@
 #include <netdb.h>
 #include <unistd.h>
 
-#define URL_SIZE 100
+#define URL_SIZE 200
 #define IP_SIZE 256
 #define BUFFER_SIZE 100
 #define PORT 80
 #define HYPER_LIKE_SIZE 200
-#define REQUEST_SIZE 300
+#define REQUEST_SIZE 400
 
 // convert domain name to ipv4
 char* conver_ip( char* url ) {
@@ -51,8 +51,13 @@ int main() {
     scanf("%s", url); 
 
     // seperate url into ip and file path
-    strcpy(file_path, strstr(url, "/") + 1);
-    domain_name = strtok(url, "/"); 
+    if (strstr(url, "/")) {
+        strcpy(file_path, strstr(url, "/") + 1);
+        domain_name = strtok(url, "/");
+    }
+    else {
+        domain_name = url;
+    }  
 
     char* ip_host = conver_ip(domain_name);
 
@@ -71,7 +76,7 @@ int main() {
     strcat(message, " HTTP/1.1\r\nHost: ");
     strcat(message, domain_name);
     strcat(message, "\r\nConnection: close\r\n\r\n");
-
+    
     unsigned char* buffer = malloc((BUFFER_SIZE + 1) * sizeof(char));
 
     // setting socket
@@ -123,6 +128,10 @@ int main() {
             cur = end;
             printf("\n");        
         }
+<<<<<<< HEAD:lab.c
+=======
+
+>>>>>>> ce2a14facf0951e0d1611688d1c412c139e401bc:main.c
         if ((start = strstr(cur, "<a"))) {
             for (offset = 0; *start != '>' && *start != '\0'; offset++ ,start++) {
                 buffer[offset] = *start;
@@ -144,6 +153,10 @@ int main() {
 
     // close socket connection
     close(sockfd);
+    
+    /*free(message);
+    free(url);
+    free(buffer);*/
     return 0;
 
 }
