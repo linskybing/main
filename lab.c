@@ -8,7 +8,7 @@
 
 #define URL_SIZE 200
 #define IP_SIZE 256
-#define BUFFER_SIZE 100
+#define BUFFER_SIZE 102400
 #define PORT 80
 #define HYPER_LIKE_SIZE 200
 #define REQUEST_SIZE 400
@@ -76,8 +76,6 @@ int main() {
     strcat(message, " HTTP/1.1\r\nHost: ");
     strcat(message, domain_name);
     strcat(message, "\r\nConnection: close\r\n\r\n");
-    
-    unsigned char* buffer = malloc((BUFFER_SIZE + 1) * sizeof(char));
 
     // setting socket
     server_addr.sin_family = AF_INET;
@@ -107,46 +105,34 @@ int main() {
     int count_hyper = 0;
     int offset = 0;
 
+    unsigned char* buffer = malloc((BUFFER_SIZE + 1) * sizeof(char));
+
     printf("Receiving the response\n");
     printf("============ Hyperlinks ============ \n");
-    /*
-    while((len = recv(sockfd, buffer + offset, BUFFER_SIZE - offset, 0)) > 0) {
-        unsigned char *start, *target, *end;        
-        unsigned char *cur = buffer;
-        buffer[len + offset] = '\0';
-        while ((start = strstr(cur, "<a")) &&
-               (target = strstr(start, "href=\"")) &&
-               (end = strstr(target, ">"))) {
 
-            target += 6;
-
-            for (; *target != '\"'; target++) {
-                printf("%c", (*target));
-            }
-    
-            count_hyper++;
-            cur = end;
-            printf("\n");        
-        }
-<<<<<<< HEAD:lab.c
-=======
-
->>>>>>> ce2a14facf0951e0d1611688d1c412c139e401bc:main.c
-        if ((start = strstr(cur, "<a"))) {
-            for (offset = 0; *start != '>' && *start != '\0'; offset++ ,start++) {
-                buffer[offset] = *start;
-            }
-        }
-        else if(buffer[len - 1] == '<') {
-            offset = 0;
-            buffer[offset++] = '<';            
-        }
-        else {
-            offset = 0;
-        }
-        
+    while ((len = recv(sockfd, buffer + offset, BUFFER_SIZE, 0)) > 0) {
+        offset += len;
     }
-    */
+
+    unsigned char *start, *target, *end;        
+    unsigned char *cur = buffer;
+
+    // find hyperlink in buffer
+     while ((start = strstr(cur, "<a")) &&
+            (target = strstr(start, "href=\"")) &&
+            (end = strstr(target, ">"))) {
+
+        target += 6;
+
+        for (; *target != '\"'; target++) {
+            printf("%c", (*target));
+        }
+    
+        count_hyper++;
+        cur = end;
+        printf("\n");        
+    }
+    
 
     printf("==================================== \n");
     printf("We have found %d hyperlinks\n", count_hyper);
@@ -154,9 +140,9 @@ int main() {
     // close socket connection
     close(sockfd);
     
-    /*free(message);
+    free(message);
     free(url);
-    free(buffer);*/
+    free(buffer);
     return 0;
 
 }

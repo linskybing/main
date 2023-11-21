@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 www.cs.nthu.edu.tw/~jungchuk/home.html
-=======
-can.cs.nthu.edu.tw/contact.php
->>>>>>> ce2a14facf0951e0d1611688d1c412c139e401bc
